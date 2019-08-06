@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Luminate Authenticator</title>
+    <link rel="stylesheet" href="css/css/font-awesome.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+          webview {
+      width: 100%;
+      height: 100%;
+    }
+    </style>
+  </head>
+  <body id="browser">
+      <div id="views">
+        <webview id="view" class="page" autosize="on"></webview>
+      </div>
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</html>
